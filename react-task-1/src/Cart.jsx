@@ -7,8 +7,8 @@ function Cart({ cart , removeBtn ,  removeCart} ) {
   return ( <> 
   { cart.length===0 ?( <div className='fixed inset-0 z-[20]  flex justify-center items-center'>
       <div className=" p-4 relative mx-4 md:px-8 w-1/2 md:w-1/2 h-auto max-h-[80%] bg-white rounded-lg shadow-md overflow-y-auto">
-      <button onClick={()=>{removeBtn()}} className='bg-red-500 hover:bg-red-600 p-1 rounded absolute z-[30]  top-2 right-2 md:top-4 md:right-4 mb-8'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
-      <h1 className='text-center text-base md:text-2xl mb-4 mt-6'>No items added</h1>
+      <button onClick={()=>{removeBtn()}} className='bg-red-500 hover:bg-red-600   rounded absolute z-[30]  top-2 right-2 md:top-4 md:right-4 mb-8'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+      <h1 className='text-center text-base md:text-2xl mb-4 mt-8 '>No items added</h1>
         </div>
     </div>) : 
     //if item is not empty
