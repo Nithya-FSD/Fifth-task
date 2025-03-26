@@ -12,7 +12,7 @@ function Product({ product, addCartBtn,addCart, cartCount }) {
        </nav>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pt-12  mx-16 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pt-12 mx-8 md:mx-16 ">
 
         {product.map(item => (
           <div key={item.id} className=" p-3 mt-6  w-full ">
