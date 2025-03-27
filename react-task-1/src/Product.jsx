@@ -12,11 +12,11 @@ function Product({ product, addCartBtn,addCart, cartCount }) {
        </nav>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pt-12 mx-8 md:mx-16 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pt-14 mx-8 md:mx-16 ">
 
         {product.map(item => (
           <div key={item.id} className=" p-3 mt-6  w-full ">
-            <div className="bg-white  p-4  rounded shadow-md">
+            <div className="bg-white h-full p-4  rounded shadow-md flex flex-col justify-between">
               <img  className=" w-1/2 md:w-1/2  h-48 md:h-40  mx-auto mb-2"src={item.image} alt={item.title} />
               <p className='text-sm font-bold mb-2'>{item.title}</p>
               <h2 className='text-base  font-semibold text-gray-600 mb-2 '>${item.price}</h2>
